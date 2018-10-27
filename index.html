@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Social Media Use in 2018 </title>
+
+  <link rel="stylesheet" href="styles/theme.css">
+
+  <!-- add the Highcharts script elements here -->
+
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+  <script src="https://code.highcharts.com/themes/dark-unica.js"></script>
+
+
+</head>
+
+<body>
+
+  <h1>Social Media Use in 2018</h1>
+
+<p>By Tabitha Basuseto</p>
+
+  <p>The evolution of internet has created new avenues for people to communicate: social media. Pew Research Center conducted a survey on social media use of U.S. adults ages 18 and older between Jan. 3-10, 2018. The survey was done through a telephone interview that collected a national sample of 2,002 adults across all 50 states and the District of Columbia that were chosen through a combination of landline and cellphone random-digit-dial.</p>
+
+  <p>Younger Americans ages 18 to 29 make up most of the population on all social platform included on the survey except for LinkedIn and Whatsapp, which are concentrated by adults ages 30 to 49, and Pinterest, in which the two age groups tied.</p>
+
+  <!-- add the div and the chart code BELOW this comment -->
+
+  <div id="container" style="width:100%; height:400px;">
+  </div>
+  <script>
+Highcharts.chart('container', {
+          chart: {
+              type: 'column'
+          },
+          title: {
+              text: 'Social Media Usage Based on Age Groups'
+          },
+          subtitle: {
+            text: 'Source: Pew Research Center'
+          },
+          xAxis: {
+              categories: ['Facebook', 'YouTube', 'Pinterest', 'Instagram', 'Snapchat', 'LinkedIn', 'Twitter', 'Whatsapp']
+          },
+          yAxis: {
+            min: 0,
+              title: {
+                text: 'Number of Users (in percent)'
+              }
+          },
+          series: [{
+              name: '18-29',
+              data: [81, 91, 34, 64, 68, 29, 40, 27]
+          }, {
+              name: '30-49',
+              data: [78, 85, 34, 40, 26, 33, 27, 32]
+            }, {
+                name: '50-64',
+                data: [65, 68, 26, 21, 10, 24, 19, 17]
+              }, {
+                  name: '65+',
+                  data: [41, 40, 16, 10, 3, 9, 8, 6]
+          }],
+  });
+  </script>
+
+ <p>Source: Pew Research Center, <a href="http://www.pewinternet.org/2018/03/01/social-media-use-2018-appendix-a-detailed-table/"> Appendix A. Use of Online Platforms by Demographic Groups</a><p>
+
+  <p>The two online social platforms that are highly concentrated by U.S. adults ages 18 to 29 are Instagram and Snapchat. The chart below, with data released by Statista, shows the number of active users for Instagram and Snapchat in the U.S. from 2017 to 2018 and a forecast until 2022.</p>
+
+  <div id="instagram" style="width:100%; height:400px;">
+  </div>
+
+  <script>
+
+Highcharts.chart('instagram', {
+
+    title: {
+        text: 'Number of Instagram and Snapchat Users in the United States'
+    },
+
+    subtitle: {
+        text: 'Source: Statista'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Number of Active Users (in millions)'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2017
+        }
+    },
+
+    series: [{
+        name: 'Instagram',
+        data: [92.6, 104.7, 113.3, 120.3, 125.7, 130.7]
+      }, {
+        name: 'Snapchat',
+        data: [79.2, 84.8, 90.4, 95.6, 100.2, 103.6]
+    }],
+
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
+  </script>
+ <p>Source: Statista, Number of <a href="https://www.statista.com/statistics/293771/number-of-us-instagram-users/"> Instagram</a> and <a href="https://www.statista.com/statistics/558227/number-of-snapchat-users-usa/"> Snapchat </a> Users in the United States<p>
+
+   <p>In 2022, Instagram is forecasted to reach 130.7 million active users and Snapchat is projected to reach 103.6 million users in the U.S.</p>
+
+  <!-- the 'container' DIV must be EMPTY -->
+
+
+  <!-- DO NOT write anything below these required tags /18 -->
+  </body>
+  </html>

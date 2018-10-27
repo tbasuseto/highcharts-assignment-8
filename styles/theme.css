@@ -1,0 +1,53 @@
+
+
+  h1 {
+    color: #2E2E2E;
+    font-family: 'Lucida-Bright', 'Georgia', serif;
+  }
+
+  body {
+    max-width: 600px;
+    background: #fff;
+    color: #2E2E2E;
+    font-family: 'Candara', 'Tahoma', sans-serif;
+    margin: auto;
+  }
+
+
+  /*  the #container div (below) holds one chart  */
+
+  #container {
+    display: block;
+    width: 60%;
+    height: 500px;
+  }
+
+  #instagram {
+    display: block;
+    width: 60%;
+    height: 500px;
+  }
+
+  p { line-height: 1.2rem; }
+
+
+  /* link styles /18 */
+  a {
+    color: #0287b3;
+  }
+
+  a:hover {
+    color: #3ecbfa;
+  }
+
+  /* put media queries below - I used two; the ORDER matters! */
+  @media screen and (max-width: 650px) {
+      #container {
+        width: 100%;
+      }
+      #instagram {
+        width: 100%
+      }
+      body {
+        margin: 1rem;
+      }
